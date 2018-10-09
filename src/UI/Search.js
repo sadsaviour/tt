@@ -37,13 +37,6 @@ const CompanyList = styled.ul`
   padding-left: 0px;
 `;
 
-const Company = styled.li`
-  text-color: blue;
-  list-style-type: none;
-`;
-
-const SearchInput = styled.input``;
-
 const Search = ({ history }) => (
   <Downshift
     onChange={selection => history.push(`/categories/${selection.value}`)}
@@ -94,7 +87,8 @@ const Search = ({ history }) => (
             ? companies
               .filter(item => !inputValue || item.value.includes(inputValue))
               .map((item, index) => {
-                const adjustedIndex = index + 5; // 5 should be replaced by initial length of categories list
+                // 5 should be replaced by initial length of categories list
+                const adjustedIndex = index + 5;
                 return (
                   <Category
                     {...getItemProps({
