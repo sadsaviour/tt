@@ -85,6 +85,7 @@ const Search = ({ history }) => (
                     },
                   })}
                 >
+                  {'c: '}
                   {item.value}
                 </Category>
               ))
@@ -107,6 +108,7 @@ const Search = ({ history }) => (
                       },
                     })}
                   >
+                    {'b: '}
                     {item.value}
                   </Category>
                 );
