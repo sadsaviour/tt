@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Stars from '../UI/Stars';
 
 const Container = styled.div`
   box-sizing: border-box;
@@ -35,6 +36,7 @@ export default ({ review }) => {
         rating:
         {rating}
       </Rating>
+      <Stars rating={rating} />
       <Text>{text}</Text>
     </Container>
   );
