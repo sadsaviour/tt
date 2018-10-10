@@ -87,7 +87,7 @@ const Search = ({ history }) => (
             ? companies
               .filter(item => !inputValue || item.value.includes(inputValue))
               .map((item, index) => {
-                // 5 should be replaced by initial length of categories list
+                // TODO 5 should be replaced by initial length of categories list
                 const adjustedIndex = index + 5;
                 return (
                   <Category
