@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Logo from './UI/Logo';
-import Button from './UI/Button';
-import Search from './UI/Search';
+import Logo from './Logo';
+import Button from './Button';
+import Search from './Search';
 
 const Container = styled.div`
   display: flex;

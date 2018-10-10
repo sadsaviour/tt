@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Screen from './UI/Screen';
-import Header from './Header';
-import Footer from './Footer';
+import Header from './UI/Header';
+import Footer from './UI/Footer';
 import CategoryList from './category/CategoryList';
 import Category from './category/Category';
 import Company from './company/Company';
