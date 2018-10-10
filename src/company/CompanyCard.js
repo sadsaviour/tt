@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import Logo from './UI/Logo';
+import Logo from '../UI/Logo';
 
 const Container = styled.div`
   box-sizing: border-box;
@@ -19,6 +19,6 @@ const Container = styled.div`
 export default ({ id, value }) => (
   <Container>
     <Logo />
-    <Link to={`/categories/${id}`}>{value}</Link>
+    <Link to={`/companies/${id}`}>{value}</Link>
   </Container>
 );
