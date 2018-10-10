@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import media from '../utils/mediaSizes';
 
 const Container = styled.div`
   flex: 1 0 auto;
@@ -12,6 +13,8 @@ const Container = styled.div`
 
   background: white;
   border: 1px solid grey;
+
+  ${media.desktop`max-width: 950px;`};
 `;
 
 export default ({ children }) => <Container>{children}</Container>;
