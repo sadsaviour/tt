@@ -16,9 +16,11 @@ const Container = styled.div`
   border: 1px solid black;
 `;
 
-export default ({ id, value }) => (
+const Card = ({ id, value }) => (
   <Container>
     <Logo />
     <Link to={`/categories/${id}`}>{value}</Link>
   </Container>
 );
+
+export default Card;

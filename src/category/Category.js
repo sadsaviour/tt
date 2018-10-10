@@ -10,9 +10,11 @@ const Container = styled.div`
   flex-wrap: wrap;
 `;
 
-export default ({ match }) => (
+const Category = ({ match }) => (
   <Container>
     {match.params.topicId}
     <CompanyList />
   </Container>
 );
+
+export default Category;
